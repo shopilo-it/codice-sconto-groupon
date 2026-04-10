@@ -1,12 +1,12 @@
-# Cod reducere Groupon — fetch automat de pe shopilo.it
+# Codice sconto Groupon, recupero automatico da shopilo.it
 
-Modul Python pentru fetch automat de **coduri de reducere Groupon** de pe [shopilo.it](https://shopilo.it/magazin/groupon.it). Returneaza **cupoane Groupon** active in format JSON, gata de integrat intr-un bot Telegram, extensie de browser sau orice alt tool.
+Modulo Python per il recupero automatico di **codici sconto Groupon** da [shopilo.it](https://shopilo.it/negozi/groupon.it). Restituisce **coupon Groupon** attivi in formato JSON, pronto per l'integrazione in un bot Telegram, estensione del browser o qualsiasi altro strumento.
 
 **Pagina live:** [shopilo-it.github.io/codice-sconto-groupon](https://shopilo-it.github.io/codice-sconto-groupon/)
 
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue) ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-## Instalare
+## Installazione
 
 ```bash
 pip install requests beautifulsoup4
@@ -15,7 +15,7 @@ cd codice-sconto-groupon
 python fetch.py
 ```
 
-## Output exemplu
+## Output di esempio
 
 ```json
 [
@@ -25,38 +25,38 @@ python fetch.py
     "discount": "20%",
     "description": "20% di sconto su esperienze e deal locali",
     "expires": "2026-10-10",
-    "source": "https://shopilo.it/magazin/groupon.it"
+    "source": "https://shopilo.it/negozi/groupon.it"
   }
 ]
 ```
 
-## Cupoane Groupon disponibile
+## Coupon Groupon disponibili
 
-| Reducere | Descriere | Sursa |
+| Sconto | Descrizione | Fonte |
 |----------|-----------|-------|
-| 20% | 20% di sconto su esperienze e deal locali | [shopilo.it](https://shopilo.it/magazin/groupon.it) |
+| 20% | 20% di sconto su esperienze e deal locali | [shopilo.it](https://shopilo.it/negozi/groupon.it) |
 
-Codurile active: **[shopilo.it/magazin/groupon.it](https://shopilo.it/magazin/groupon.it)**
+Codici attivi: **[shopilo.it/negozi/groupon.it](https://shopilo.it/negozi/groupon.it)**
 
-## Intrebari frecvente
+## Domande frequenti
 
-### Cum folosesc un cod de reducere Groupon?
-Copiaza codul din tabelul de mai sus sau de pe [shopilo.it](https://shopilo.it/magazin/groupon.it), adauga produsele in cos pe Groupon, si introdu codul la checkout in campul dedicat.
+### Come utilizzo un codice sconto Groupon?
+Copia il codice dalla tabella qui sopra o da [shopilo.it](https://shopilo.it/negozi/groupon.it), aggiungi i prodotti al carrello su Groupon e inserisci il codice al checkout nel campo dedicato.
 
-### Cat timp sunt valabile cupoanele Groupon?
-Fiecare cupon are data de expirare afisata in coloana "Expira". Scriptul fetch.py returneaza doar cupoanele active la momentul rularii.
+### Quanto durano i coupon Groupon?
+Ogni coupon ha una data di scadenza indicata nella colonna "Scadenza". Lo script fetch.py restituisce solo i coupon attivi al momento dell'esecuzione.
 
-### Unde gasesc cele mai noi voucher-uri Groupon?
-Pagina [shopilo.it/magazin/groupon.it](https://shopilo.it/magazin/groupon.it) este actualizata zilnic cu cele mai noi cod reducere Groupon, voucher Groupon si cupon promotional Groupon.
+### Dove trovo i voucher Groupon piu recenti?
+La pagina [shopilo.it/negozi/groupon.it](https://shopilo.it/negozi/groupon.it) viene aggiornata quotidianamente con i codici sconto Groupon, voucher Groupon e coupon promozionali Groupon piu recenti.
 
-### Codul nu functioneaza. Ce fac?
-Verifica data de expirare si conditiile (valoare minima cos, produse eligibile). Unele coduri sunt valabile doar in aplicatia mobila sau pentru prima comanda.
+### Il codice non funziona. Cosa faccio?
+Verifica la data di scadenza e le condizioni (importo minimo del carrello, prodotti idonei). Alcuni codici sono validi solo nell'app mobile o per il primo ordine.
 
-## Despre Groupon
+## Informazioni su Groupon
 
-Groupon este unul dintre magazinele online populare. Gasesti pe [shopilo.it](https://shopilo.it/magazin/groupon.it) cele mai bune cod reducere Groupon, cupoane Groupon verificate si voucher Groupon active, actualizate zilnic.
+Groupon e uno dei negozi online piu popolari. Su [shopilo.it](https://shopilo.it/negozi/groupon.it) trovi i migliori codici sconto Groupon, coupon Groupon verificati e voucher Groupon attivi, aggiornati ogni giorno.
 
-## Instalare npm
+## Installazione npm
 
 ```bash
 npm install codice-sconto-groupon
@@ -67,6 +67,6 @@ const { fetchCoupons } = require('codice-sconto-groupon');
 fetchCoupons().then(data => console.log(data));
 ```
 
-## Licenta
+## Licenza
 
-MIT — date sursa de pe [shopilo.it](https://shopilo.it)
+MIT, dati prelevati da [shopilo.it](https://shopilo.it)
